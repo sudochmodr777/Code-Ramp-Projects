@@ -13,6 +13,6 @@ for (let currentFailures = 0; age !== age; currentFailures++) {
     	alert("is a teen (oh no!)");
 } if (age < 13 && age > 0) {
     	alert("a child!");
-} else if (age == 0) {
+} else if (age == 0) { //accounts for if a person either enters "0" or hits "enter" while the answer field is blank
         alert("rude");
 }
