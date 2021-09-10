@@ -1,0 +1,18 @@
+function findInString(str1, str2){
+    let str1Length = str1.length;
+    let str2Length = str2.length;
+    let partialMatch = ""
+    for (str1Position = 0; str1Position < (str1Length - str2Length + 1); str1Position++) {
+      partialMatch = ""
+      for (str2Position = 0; str2Position < str2Length; str2Position++) {
+        if (str2[str2Position] !== str1[str1Position + str2Position]) break;
+        partialMatch += str2[str2Position];
+        if (str2Position === (str2Length - 1)) {
+          console.log(partialMatch)
+          return true;
+        }
+      }
+      console.log(partialMatch);
+    }
+    return false;
+  }
